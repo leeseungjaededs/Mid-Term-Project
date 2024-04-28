@@ -24,6 +24,12 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .image-container {
+            display: flex; /* 이미지를 나란히 표시하기 위해 flex 속성 사용 */
+            justify-content: center; /* 가로 방향 가운데 정렬 */
+            align-items: center; /* 세로 방향 가운데 정렬 */
+            gap: 20px; /* 이미지 사이의 간격 설정 */
+        }
         img {
             max-width: 25%;
             height: auto;
@@ -48,12 +54,15 @@
 
 <section>
     <h2>About Me</h2>
-    <p>Thankyou for visiting</p>
-    <img src="C:\Users\lee seung jae\Desktop\오픈소스 Githhub 실습\KakaoTalk_20240330_190443433.jpg" alt="Sample Image">
+    <p>Thank you for visiting</p>
+    <div class="image-container">
+        <img src="C:\Users\lee seung jae\Desktop\오픈소스 Githhub 실습\KakaoTalk_20240330_190443433.jpg" alt="Sample Image">
+        <img src="path/to/your/second/image.jpg" alt="Second Image"> <!-- 두 번째 이미지 추가 -->
+    </div>
     <p>Name : <strong>lee seung jae</strong></p>
     <p>Birth : <strong>1999.05.11</strong></p>
     <p>Univ : <strong>Dankook univ</strong></p>
-    <p>Email : <strong>jaelee1999@naver.com</strong><p>
+    <p>Email : <strong>jaelee1999@naver.com</strong></p>
     <p>Check out my <a href="https://github.com/leeseungjaededs/Mid-Term-Project.git" target="_blank">GitHub</a> profile.</p>
 </section>
 
@@ -61,7 +70,7 @@
     <h2>My Skills</h2>
     <ul>
         <li>C++</li>
-        <li>python</li>
+        <li>Python</li>
         <li>JavaScript</li>
         <li>Responsive Web Design</li>
     </ul>
